@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/green"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="The green value"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        android:onClick="manuelColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LetterG"
+        app:layout_constraintStart_toEndOf="@+id/LetterG" />
+
+    <EditText
+        android:id="@+id/red"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="The red value"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        android:onClick="manuelColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LetterR"
+        app:layout_constraintStart_toEndOf="@+id/LetterR" />
+
+    <TextView
+        android:id="@+id/LetterR"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="R"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/LetterG"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LetterG"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="G"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/LetterB"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="changeColor"
+        android:text="@string/button_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/blue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="The blue value"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        android:onClick="manuelColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LetterB"
+        app:layout_constraintStart_toEndOf="@+id/LetterB" />
+
+    <TextView
+        android:id="@+id/LetterB"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="B"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
